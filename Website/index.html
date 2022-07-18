@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+<!--### Hier wird unser Font von Google importiert-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+<!--### Hier wird unser Font von Google importiert-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Teko:wght@500&display=swap" rel="stylesheet">
+</head>
+
+    <style>
+        body{
+            font-family: 'Teko', sans-serif;
+            background-color: rgba(2, 2, 2, 0.596)
+        }
+
+        .sidenav {
+        display: list-item;
+        justify-content: center;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+        font-family: 'Teko', sans-serif;
+        }
+
+        .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        top: auto;
+        }
+
+        .sidenav_h1 a:hover {
+        color: #f1f1f1;
+        }
+
+        .sidenav a:hover {
+        color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+
+        .sidenav_h1{
+        display: flex;
+        justify-content: center;
+        }
+
+        @media screen and (max-height: 100px) {
+        .sidenav {padding-top: 0px;}
+        .sidenav a {font-size: 18px;}
+        }
+        </style>
+<body>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://moodle.hsnr.de/">Moodle</a>
+    <a href="https://webmail.stud.hn.de/">E-Mail</a>
+    <a href="https://hio.hs-niederrhein.de/">Hochschulportal</a>
+    <a href="https://github.com/">Github</a>
+    </div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+</body>
+</html>
